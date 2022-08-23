@@ -18,7 +18,14 @@ const fibs = (size) => {
   return sequence;
 };
 
-// recursive implementation
+/*
+recursive implementation:
+pseudocode:
+if (n is less than or equal to 1)
+  return n
+else
+  fib = fib(n - 1) + fib(n - 2)
+*/
 const fibsRec = (size) => {
   if (size <= 1) return size;
   return fibsRec(size - 1) + fibsRec(size - 2);
